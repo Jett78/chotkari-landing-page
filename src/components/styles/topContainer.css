@@ -1,0 +1,99 @@
+.ck-main-info>h1 {
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 1rem;
+}
+
+.ck-info-video-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.ck-info-para>p {
+    color: #fff !important;
+}
+
+@media (max-width: 386px) {
+    .ck-info-para>p {
+
+        display: none;
+    }
+
+    .ck-main-info>p {
+        font-size: 12px !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .ck-main-info>h1 {
+        font-size: 24px !important;
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    iframe {
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .ck-info-video-section {
+        display: block;
+        margin-bottom: 4rem;
+        margin-top: -4rem;
+    }
+
+    iframe {
+        height: 200px;
+        width: 300px;
+        margin: auto;
+        position: relative;
+
+    }
+
+    .ck-info-para>p {
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ck-main-info>h1 {
+        font-size: 24px !important;
+        margin-top: -1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .ck-main-info>p {
+        font-size: 12px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .my-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .ck-main-info>h1 {
+        font-size: 40px;
+        margin-top: 2rem;
+        font-weight: 700;
+    }
+
+    .ck-main-info>p {
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .my-button {
+        font-size: 25px;
+        height: 70px;
+    }
+}

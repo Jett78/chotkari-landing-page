@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+.ck-main-content-container {
+    font-family: 'Poppins', sans-serif;
+    width: 75%;
+    margin: auto;
+    overflow-x: hidden;
+    margin-top: 10rem;
+
+}
+
+.ck-main-content-container>h1,
+p {
+    color: #006696;
+}
+
+.ck-waitlist-steps-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.ck-waitlist-steps {
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    flex-direction: column;
+}
+
+.ck-waitlist-inner-div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+    background-color: #ECFDF5;
+}
+
+.ck-waitlist-inner-div-2 {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+    height: 70%;
+    background-color: #FFF1F2
+}
+
+.ck-waitlist-inner-div-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+    height: 70%;
+    background-color: #F0F9FF
+}
+
+.ck-waitlist-steps>span {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #686163;
+}
+
+.ck-waitlist-steps>p {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .ck-main-content-container {
+        margin-top: 2rem;
+    }
+
+    .ck-main-content-container>h1 {
+        font-size: 30px !important;
+    }
+
+    .ck-main-p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        text-align: start;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+
+    .ck-waitlist-steps {
+        display: block;
+        margin: auto;
+    }
+}
