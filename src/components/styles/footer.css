@@ -58,4 +58,21 @@
         gap: 0.5rem;
         margin-left: 2rem;
     }
+
+    .ck-bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px) {
+    .ck-footer-section-container {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1255px) {
+    .ck-footer-section-container {
+        width: 100% !important;
+    }
 }

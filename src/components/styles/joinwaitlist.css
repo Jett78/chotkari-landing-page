@@ -70,7 +70,7 @@ p {
     }
 
     .ck-waitlist-btn {
-        gap: 3.5rem !important;
+        gap: 1.5rem !important;
 
     }
 }
@@ -91,9 +91,17 @@ p {
         display: block;
         width: 100%;
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     .ck-waitlist-btn {
         gap: 15rem;
+    }
+}
+
+@media (max-width: 1255px) {
+    .ck-waitlist-btn {
+        gap: 13rem;
     }
 }

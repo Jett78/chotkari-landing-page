@@ -7,7 +7,7 @@
     width: 75%;
     margin: auto;
     overflow-x: hidden;
-    margin-top: 10rem;
+    margin-top: 11rem;
 
 }
 
@@ -19,7 +19,7 @@ p {
 .ck-waitlist-steps-container {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     flex-wrap: wrap;
 
 }
@@ -91,17 +91,26 @@ p {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:769px) {
     body {
         overflow-x: hidden;
     }
 
+    #how-to {
+        width: 100%;
+    }
+
     .ck-main-content-container {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 
     .ck-main-content-container>h1 {
         font-size: 30px !important;
+        margin-top: 1rem;
+    }
+
+    .ck-waitlist-steps-container {
+        justify-content: center !important;
     }
 
     .ck-main-p {
@@ -120,5 +129,10 @@ p {
     .ck-waitlist-steps {
         display: block;
         margin: auto;
+    }
+
+    .ck-waitlist-steps-container {
+        justify-content: center !important;
+        gap: 50px;
     }
 }

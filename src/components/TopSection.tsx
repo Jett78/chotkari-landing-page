@@ -5,33 +5,32 @@ export default function TopContainer() {
     return (
         <>
             <div className="text-center mt-8 ck-main-info">
-                <h1 className=" font-bold tracking-tight text-white sm:text-6xl">
+                <h1 className="text-white ck-top-heading">
                     Welcome to Chotkari
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-white">
+                <p className="mt-6 text-lg leading-8 text-white ck-top-paragraph">
                     A powerful tool to enhance and amplify your reading experience.
                 </p>
-                <br />
-                <br />
+
                 <div className="button-container">
-                    <button className="my-button">
+                    <button className="ck-join-button">
                         Join Waitlist <FaArrowRight />
                     </button>
                 </div>
-            </div>
-            <div className="ck-info-video-section">
-                <div className="ck-info-para">
-                    <p>Everything in Short</p>
-                </div>
 
-                <div className="ck-info-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z3pb2TNoEsc?si=oMIChl_NTOia2I95&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                </div>
-                <div className="ck-info-para">
-                    <p>अब सबै समाचार छोटकरीमा</p>
+                <div className="ck-info-video-section">
+                    <div className="ck-info-para ck-english">
+                        <p>Everything in Short</p>
+                    </div>
+
+                    <div className="ck-info-video">
+                        <iframe src="https://player.vimeo.com/video/891811069?&autoplay=1&loop=1" width="560" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" ></iframe>
+                    </div>
+                    <div className="ck-info-para ck-nepali">
+                        <p>अब सबै समाचार छोटकरीमा</p>
+                    </div>
                 </div>
             </div>
-
         </>
     )
 }

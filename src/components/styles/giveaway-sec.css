@@ -11,6 +11,10 @@
     overflow-x: hidden;
 }
 
+.ck-prizes-div {
+    display: flex;
+}
+
 .ck-giveaway-steps-container {
     margin-top: 2rem;
     display: flex;
@@ -118,4 +122,57 @@ p {
         margin-bottom: 10px !important;
         margin: auto;
     }
+}
+
+@media (max-width: 576px) {
+    .ck-giveaway-section-container {
+        margin-top: 2rem !important;
+    }
+
+    .ck-giveaway-inner-div-1,
+    .ck-giveaway-inner-div-2,
+    .ck-giveaway-inner-div-3 {
+        margin-top: -1rem !important;
+    }
+
+    .ck-prizes-div {
+        display: block !important;
+
+    }
+}
+
+@media (max-width:1050px) {
+    .ck-giveaway-section-container {
+        width: 100% !important;
+    }
+
+    .ck-prizes-div {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:1255px) {
+    .ck-giveaway-steps-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ck-prizes-detail {
+        margin-top: 1.5rem;
+    }
+
+    .ck-giveaway-inner-div-1,
+    .ck-giveaway-inner-div-2,
+    .ck-giveaway-inner-div-3 {
+        margin-top: -1rem !important;
+    }
+
+    .ck-prizes-div {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px
+    }
+
 }
