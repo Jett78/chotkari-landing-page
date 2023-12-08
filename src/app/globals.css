@@ -27,6 +27,15 @@ dialog {
 }
 
 
+
+.navlink {
+  cursor: pointer;
+}
+
+.hamburger {
+  color: #fff;
+}
+
 .ck-hero-section {
   background-image: url('../../public/bg-stoke.svg');
   background-color: var(--primary-color);

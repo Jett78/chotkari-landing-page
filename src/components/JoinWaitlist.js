@@ -55,9 +55,9 @@ export default function JoinWaitlist() {
         <>
             <section className="ck-join-waitlist-section-container" id='join-waitlist'>
                 <div className="ck-join-waitlist-inner-container">
-                    <div className="ck-join-waitlist-info">
-                        <h1 className="font-bold tracking-tight text-justify sm:text-4xl ck-giveaway-h1">Join our Waitling List</h1>
-                        <p className="mt-5 text-lg leading-8 text-justify ck-giveaway-p">
+                    <div className="ck-join-waitlist-info ck-giveaway-info">
+                        <h1 className="custom-heading-giveaway">Join our Waitling List</h1>
+                        <p className="mt-5 ck-giveaway-p">
                             Indulge yourself into a world of greatness where you'll be a part of a community that values information, connection, and the joy of reading.
                             Don't miss out on the opportunity to experience the future of news/article delivery first-hand, as we are giving away merchandise to a selected few.
                         </p>
@@ -70,7 +70,7 @@ export default function JoinWaitlist() {
                                     id="full name"
                                     value={name}
                                     onChange={(e) => setFullName(e.target.value)}
-                                    className="ck-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    className="ck-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:white dark:border-gray-600 dark:placeholder-gray-400 d dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Enter your full name"
                                     required
                                 />
@@ -82,7 +82,7 @@ export default function JoinWaitlist() {
                                     id="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="ck-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    className="ck-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:white dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Enter your email"
                                     required
                                 />

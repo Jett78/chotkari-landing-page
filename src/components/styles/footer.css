@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 768px) {
+    .h3 {
+        font-weight: 600 !important;
+    }
+
     .ck-bottom-content {
         display: block;
         margin: auto;
@@ -48,6 +52,7 @@
 
     .ck-footer-image {
         margin: auto;
+        display: none;
     }
 
     .ck-socials {

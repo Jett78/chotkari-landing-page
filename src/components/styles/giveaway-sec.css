@@ -31,6 +31,7 @@
 .ck-giveaway-info>h1,
 p {
     color: #006696;
+    font-weight: 600;
 
 }
 
@@ -70,9 +71,21 @@ p {
     height: 70%;
 }
 
+.custom-heading-giveaway {
+    font-size: 36px;
+    text-align: start;
+    line-height: 3rem;
+}
+
 @media (max-width: 768px) {
     .ck-giveaway-section-container {
         width: 100%;
+    }
+
+    .custom-heading-giveaway {
+        font-size: 30px;
+        line-height: 2rem;
+        text-align: center;
     }
 
     .ck-giveaway-steps-container {

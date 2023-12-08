@@ -13,20 +13,20 @@ export default function Footer() {
                     <div className="mt-6 lg:mt-0 lg:flex-1">
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                             <div className='flex-1'>
-                                <h3 className="text-gray-700 uppercase text-white text-c">NAVIGATION</h3>
+                                <h3 className="text-gray-700 uppercase text-white text-c h3">NAVIGATION</h3>
                                 <a href="#how-to" className="block mt-2 text-sm text-white dark:text-white text-c hover:underline">How to Join ?</a>
                                 <a href="#giveaway" className="block mt-2 text-sm text-white dark:text-white text-c hover:underline">Giveway details</a>
                                 <a href="#join-waitlist" className="block mt-2 text-sm text-white dark:text-white text-c hover:underline">Join Waiting List</a>
                             </div>
 
                             <div className='flex-2 ck-socials'>
-                                <h3 className="text-gray-700 uppercase text-white dark:text-white text-c">Get Regular Updates</h3>
+                                <h3 className="text-gray-700 uppercase text-white dark:text-white text-c h3">Get Regular Updates</h3>
                                 <a href="https://www.facebook.com/chotkari.global" target="_blank" className="flex  justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaFacebook />FACEBOOK</a>
                                 <a href="https://www.youtube.com/@chotkari" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaYoutube />YOUTUBE</a>
                                 <a href="https://www.instagram.com/chotkari/" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaInstagram />INSTAGRAM</a>
                             </div>
                             <div className='flex-1'>
-                                <div className="">
+                                <div className="ck-last-message">
                                     <a href="https://chotkari.com">
                                         <Image className="w-auto h-7 ck-footer-image" src={logo} alt="" width={0} height={0} />
                                     </a>
