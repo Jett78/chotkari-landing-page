@@ -30,10 +30,10 @@ export default function Footer() {
 
                             <div className='flex-2 ck-socials'>
                                 <h3 className="text-gray-700 uppercase text-white dark:text-white text-c h3">Get Regular Updates</h3>
-                                <a href="https://www.facebook.com/chotkari.global" target="_blank" className="flex  justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaFacebook />FACEBOOK</a>
-                                <a href="https://www.youtube.com/@chotkari" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaYoutube />YOUTUBE</a>
-                                <a href="https://www.instagram.com/chotkari/" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaInstagram />INSTAGRAM</a>
-                                <a href="https://www.instagram.com/chotkari/" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline text-c"><FaLinkedin />LINKEDIN</a>
+                                <a href="https://www.facebook.com/chotkari.global" target="_blank" className="flex  justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline"><FaFacebook />FACEBOOK</a>
+                                <a href="https://www.youtube.com/@chotkari" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline "><FaYoutube />YOUTUBE</a>
+                                <a href="https://www.instagram.com/chotkari/" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline "><FaInstagram />INSTAGRAM</a>
+                                <a href="https://www.instagram.com/chotkari/" target="_blank" className="flex justify-start items-center block mt-2 text-sm text-white dark:text-white hover:underline"><FaLinkedin />LINKEDIN</a>
                             </div>
                             <div className='flex-1'>
                                 <div className="ck-last-message">

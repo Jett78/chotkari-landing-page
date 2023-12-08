@@ -2,10 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-
-// Import the ToastNotification component
 import ToastNotification from './Toast';
-
 import './styles/joinwaitlist.css';
 import './styles/giveaway-sec.css';
 
@@ -15,6 +12,7 @@ export default function JoinWaitlist() {
     const [email, setEmail] = useState('');
     const [toastMessage, setToastMessage] = useState('');
     const [isToastSuccess, setIsToastSuccess] = useState(false);
+    const [toastKey, setToastKey] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -31,19 +29,19 @@ export default function JoinWaitlist() {
                 }),
             });
 
-            if (response.ok) {
-                console.log('Successfully joined the waitlist!');
+            if (response.status === 200) {
                 setToastMessage('Successfully joined the waitlist!');
                 setIsToastSuccess(true);
-
-                // Clear the input fields
                 setFullName('');
                 setEmail('');
-            } else {
-                console.error('Failed to join the waitlist. Please try again.');
-                setToastMessage('Failed to send message. Please try again.');
+            }
+            else if (response.status === 422) {
+
+                setToastMessage('This email has been used. Please try again.');
                 setIsToastSuccess(false);
             }
+            const newToastKey = new Date().toISOString();
+            setToastKey(newToastKey);
         } catch (error) {
             console.error('An error occurred while joining the waitlist.', error);
             setToastMessage('An error occurred. Please try again later.');
@@ -97,9 +95,7 @@ export default function JoinWaitlist() {
                     </div>
                 </div>
             </section>
-
-            {/* Display the toast notification only when response.ok is true */}
-            {isToastSuccess && <ToastNotification message={toastMessage} success={true} />}
+            {isToastSuccess && <ToastNotification message={toastMessage} success={true} key={toastKey} />}
         </>
     );
 }
