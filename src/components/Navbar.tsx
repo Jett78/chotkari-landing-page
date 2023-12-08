@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll'
 import logo from '../../public/chotkari-logo.svg';
+import mobileLogo from '../../public/mobile-menu-logo.svg';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -56,7 +57,7 @@ export default function Navbar() {
                             <span className="sr-only">Your Company</span>
                             <Image
                                 className="h-8 w-auto"
-                                src={logo}
+                                src={mobileLogo}
                                 alt="chotkari-logo"
                             />
                         </a>

@@ -77,9 +77,18 @@ p {
     line-height: 3rem;
 }
 
+.giveaway-p-xxl {
+    font-weight: 400 !important;
+}
+
 @media (max-width: 768px) {
     .ck-giveaway-section-container {
         width: 100%;
+    }
+
+    .giveaway-p {
+        font-weight: 300 !important;
+        text-align: center !important;
     }
 
     .custom-heading-giveaway {
@@ -140,6 +149,7 @@ p {
 @media (max-width: 576px) {
     .ck-giveaway-section-container {
         margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
 
     .ck-giveaway-inner-div-1,

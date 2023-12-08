@@ -9,7 +9,7 @@ export default function GiveawayDescription() {
             <div className='ck-giveaway-steps-container'>
                 <div className="ck-giveaway-info">
                     <h1 className=" custom-heading-giveaway">Early Bird Giveaway worth Rs. 1,50,000+</h1>
-                    <p className="mt-5">Be the part of our Waitlist and make yourself eligible
+                    <p className="mt-5 giveaway-p giveaway-p-xxl">Be the part of our Waitlist and make yourself eligible
                         for the Exciting Giveaway </p>
                 </div>
                 <div className='ck-prizes-div'>

@@ -25,6 +25,12 @@
     gap: 0.5rem;
 }
 
+.footer-text {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     .h3 {
         font-weight: 600 !important;
@@ -41,7 +47,8 @@
     }
 
     .text-c {
-        text-align: center;
+        text-align: center !important;
+
     }
 
     .ck-footer-section-container {

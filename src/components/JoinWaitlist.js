@@ -57,7 +57,7 @@ export default function JoinWaitlist() {
                 <div className="ck-join-waitlist-inner-container">
                     <div className="ck-join-waitlist-info ck-giveaway-info">
                         <h1 className="custom-heading-giveaway">Join our Waiting List</h1>
-                        <p className="mt-5 ck-giveaway-p">
+                        <p className="mt-5 giveaway-p giveaway-p-xxl">
                             Indulge yourself into a world of greatness where you'll be a part of a community that values information, connection, and the joy of reading.
                             Don't miss out on the opportunity to experience the future of news/article delivery first-hand, as we are giving away merchandise to a selected few.
                         </p>

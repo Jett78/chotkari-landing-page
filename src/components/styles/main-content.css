@@ -98,10 +98,10 @@ p {
     padding-bottom: 40px;
 }
 
-.ck-waitlist-steps>span {
+.ck-steps-p {
     font-family: 'Poppins';
     font-weight: 600;
-    color: #686163;
+    color: #686163 !important;
 }
 
 .ck-waitlist-steps>p {
@@ -115,8 +115,30 @@ p {
         overflow-x: hidden;
     }
 
+    .ck-waitlist-inner-div-1,
+    .ck-waitlist-inner-div-2,
+    .ck-waitlist-inner-div-3 {
+        gap: 0;
+        justify-content: space-between;
+    }
+
     #how-to {
         width: 100%;
+    }
+
+    .ck-pointer-icon-1 {
+        margin-left: auto;
+        padding-top: 0.5rem;
+    }
+
+    .ck-pointer-icon-2,
+    .ck-pointer-icon-3 {
+        margin-left: auto;
+        padding-top: 0.5rem;
+    }
+
+    .ck-steps-p {
+        margin-bottom: -0.5rem;
     }
 
     .ck-main-content-container {
@@ -134,10 +156,8 @@ p {
 
     .ck-main-p {
         font-size: 14px;
-        line-height: 1px;
-        margin-bottom: 1rem;
-        font-weight: 500;
-        text-align: start;
+        font-weight: 300 !important;
+        text-align: center;
     }
 
 }
