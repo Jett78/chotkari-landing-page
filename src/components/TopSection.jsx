@@ -4,10 +4,19 @@ import './styles/topContainer.css'
 import { Link } from 'react-scroll';
 
 export default function TopContainer() {
+    const handleTouchStart = () => {
+        console.log('Touch start event triggered');
+        // Add your logic here
+    };
 
+    const handleTouchEnd = () => {
+        console.log('Touch end event triggered');
+        // Add your logic here
+    };
     return (
         <>
             <div className="text-center mt-8 ck-main-info">
+
                 <h1 className="text-white ck-top-heading">
                     Welcome to Chotkari
                 </h1>
@@ -17,7 +26,7 @@ export default function TopContainer() {
 
                 <div className="button-container">
 
-                    <Link to="join-waitlist" smooth={true} duration={500} className="ck-join-button" style={{ cursor: 'pointer' }}>
+                    <Link to="join-waitlist" smooth={true} duration={500} className="ck-join-button" style={{ cursor: 'pointer' }} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
                         Join Waitlist <FaArrowRight />
                     </Link>
 

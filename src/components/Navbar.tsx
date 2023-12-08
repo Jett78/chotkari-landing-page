@@ -50,8 +50,8 @@ export default function Navbar() {
 
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-50" />
-                <Dialog.Panel className="ck-nav-mobile fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed inset-0 " />
+                <Dialog.Panel className="ck-nav-mobile fixed inset-y-0 right-0 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="https://chotkari.com" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -78,7 +78,8 @@ export default function Navbar() {
                                     smooth={true}
                                     duration={500}
                                     to="how-to"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3  py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     How to join?
                                 </ScrollLink>
@@ -87,6 +88,7 @@ export default function Navbar() {
                                     duration={500}
                                     to="giveaway"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Giveaways
                                 </ScrollLink>
@@ -95,6 +97,7 @@ export default function Navbar() {
                                     duration={500}
                                     to="join-waitlist"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Join Waitlist
                                 </ScrollLink>
