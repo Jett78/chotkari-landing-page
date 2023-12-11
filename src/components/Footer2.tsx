@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import './styles/footer.css'
 import logo from '../../public/chotkari-logo.svg'
-import { Link } from 'react-scroll';
+
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 
@@ -17,15 +17,15 @@ export default function Footer() {
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                             <div className='flex-1'>
                                 <h3 className="text-gray-700 uppercase text-white text-c h3">NAVIGATION</h3>
-                                <Link to="how-to" smooth={true} duration={500} className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
+                                <a href='/' className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
                                     How to Join ?
-                                </Link>
-                                <Link to="giveaway" smooth={true} duration={500} className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
+                                </a>
+                                <a href='/' className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
                                     Giveway details
-                                </Link>
-                                <Link to="join-waitlist" smooth={true} duration={500} className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
+                                </a>
+                                <a href='/' className="block mt-2 text-sm text-white dark:text-white text-c hover:underline" style={{ cursor: 'pointer' }}>
                                     Join Waiting List
-                                </Link>
+                                </a>
                             </div>
 
                             <div className='flex-2 ck-socials'>
