@@ -41,7 +41,9 @@ export default function TopContainer() {
                     <div className="ck-info-video">
                         {/* <iframe src="https://player.vimeo.com/video/891811069?&autoplay=1&loop=1" width="560" height="315" frameBorder="0" allow="autoplay; picture-in-picture" ></iframe> */}
 
-                        <iframe src="https://player.vimeo.com/video/892519221?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay;  picture-in-picture" title="Chotkari" loop></iframe>
+                        {/* <iframe src="https://player.vimeo.com/video/892519221?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay;  picture-in-picture" title="Chotkari" loop></iframe> */}
+
+                        <iframe src="https://player.vimeo.com/video/893201705?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" title="chotkari"></iframe>
                     </div>
                     <div className="ck-info-para ck-nepali">
                         <p>अब सबै समाचार छोटकरीमा</p>
