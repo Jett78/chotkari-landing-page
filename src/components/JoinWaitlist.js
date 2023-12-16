@@ -18,7 +18,7 @@ export default function JoinWaitlist() {
         e.preventDefault();
 
         try {
-            const response = await fetch(`https://api.dev.chotkari.com/api/v1/waitlist`, {
+            const response = await fetch(`https://v2.chotkari.com/waitlist`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export default function JoinWaitlist() {
             });
 
             if (response.status === 200) {
-                setToastMessage('Successfully joined the waitlist!');
+                setToastMessage("You are registered in our waitlist. We will notify you shortly!");
                 setIsToastSuccess(true);
                 setFullName('');
                 setEmail('');
