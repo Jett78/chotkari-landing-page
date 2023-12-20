@@ -34,7 +34,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/JoinWaitlist.js",
-    "src/components/TopSection.jsx"
+    "src/components/TopSection.jsx",
+    "src/app/layout.js"
   ],
   "exclude": [
     "node_modules"
