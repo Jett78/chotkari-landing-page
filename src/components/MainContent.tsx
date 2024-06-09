@@ -1,61 +1,48 @@
-import './styles/main-content.css'
-import waitlist1 from '../../public/waitlist-1.svg'
-import waitlist2 from '../../public/waitlist-social-2.svg'
-import waitlist3 from '../../public/waitlist-3.svg'
-import greenVec from '../../public/green-vec.svg'
-import redVec from '../../public/red-Vector.svg'
-import blueVec from '../../public/blue-Vector.svg'
-import Image from 'next/image'
-import Link from 'next/link'
-export default function MainContent() {
-    return (
+import React from "react";
 
-        <main className='ck-main-content-container' id='how-to'>
-            <h1 className=" text-center ck-top-heading">How to join?</h1>
-            <p className="mt-5 text-center ck-main-p">With chotkari, joining our community is also chotkari.</p>
-            <div className='ck-waitlist-steps-container'>
-                <Link href={"#join-waitlist"}>
-                    <div className='ck-waitlist-steps'>
-                        <h6 className='ck-steps-p'>Step 01</h6>
-                        <div className='ck-waitlist-inner-div-1' >
-                            <Image src={greenVec} height={0} width={0} alt='go to' className='ck-pointer-icon-1' />
-                            <p>chotkari.com</p>
-                            <Image src={waitlist1} height={0} width={0} alt='chotkati-waitlist-1' />
+const MainContent = () => {
+  return (
+    <main className="grid justify-center">
+      <button className="w-[120px] h-30px mx-auto border rounded-2xl text-gray-500 text-[14px]">
+        Available on
+      </button>
+      <div className="flex justify-center gap-2 mt-4">
+        <img src="./image 28.png" alt="icon" />
+        <img src="./image 30.png" alt="icon" />
+      </div>
 
-                        </div>
-                        <p className='ck-main-p'>Go to chotkari.com/waitinglist</p>
-                    </div>
-                </Link>
-                <Link href={'#footer'}>
-                    <div className='ck-waitlist-steps'>
-                        <h6 className='ck-steps-p'>Step 02</h6>
-                        <div className='ck-waitlist-inner-div-2'>
-                            <Image src={redVec} height={0} width={0} alt='go to' className='ck-pointer-icon-2' />
+      <div className="relative">
+        <img src="./Next Big Wave.png" alt="text" className="mt-10" />
+        <div className="text-center absolute top-20 left-72 bg-transparent ">
+          <img src="./Logo text.png" alt="logo" className="w-80 mx-auto" />
+          <p className="py-2 text-gray-400">
+            is the <span className="text-[#C37F00]">Future</span> on How You Can
+            Consume News
+          </p>
+          <button className="mt-10 w-[240px] h-[40px] border rounded-2xl text-gray-400">
+            learn more <span className="text-gray-500">about us</span>
+          </button>
+        </div>
+      </div>
 
-                            <p>Social Media</p>
-                            <Image src={waitlist2} height={0} width={0} alt='chotkati-waitlist-1' />
-
-                        </div>
-                        <p className='ck-main-p'>Follow us on all social media</p>
-
-                    </div>
-                </Link>
-                <Link href={'https://www.facebook.com/groups/1032095298118218'} target='_blank'>
-                    <div className='ck-waitlist-steps'>
-                        <h6 className='ck-steps-p'>Step 03</h6>
-                        <div className='ck-waitlist-inner-div-3'>
-                            <Image src={blueVec} height={0} width={0} alt='go to' className='ck-pointer-icon-3' />
-
-                            <p>Community</p>
-                            <Image src={waitlist3} height={0} width={0} alt='chotkati-waitlist-1' />
-
-
-                        </div>
-                        <p className='ck-main-p'>Join our community</p>
-
-                    </div>
-                </Link>
+      <div className="relative flex items-center mx-auto mt-60 bg-[#001C2F] rounded-full h-[750px] w-[750px]">
+        <img src="./carousel-app-screens.png" alt="carouselimg" className="carousel" />
+        <div className="absolute top-[2em] -left-[16em]">
+            <div className="flex items-center gap-80">
+            <img src="./benefit-03/benefit-03.png" alt="benefit" />
+                <img src="./benefit-04/benefit-04.png" alt="benefit" />
             </div>
-        </main>
-    )
-}
+        </div>
+        
+        <div className="absolute top-[35em] -left-[12em]">
+            <div className="flex items-center gap-80">
+            <img src="./benefit-02/benefit-02.png" alt="benefit" />
+                <img src="./benefit-01/benefit-01.png" alt="benefit" />
+            </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default MainContent;

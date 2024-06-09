@@ -7,7 +7,7 @@
   --primary-color: #006696;
   --accent-color: #EFF9FF;
 }
-*{
+body{
   background-color:#002137;
 }
 
@@ -39,13 +39,6 @@ dialog {
 }
 
 
-
-
-
-
-
-
-
 /* for larger tablets */
 @media screen and (max-width: 992px) {
   .ck-hero-section {
@@ -66,7 +59,7 @@ dialog {
 
 
   .ck-hero-section {
-    height: 60dvh;
+    height: 0dvh;
   }
 
   .ck-inner-hero-section {

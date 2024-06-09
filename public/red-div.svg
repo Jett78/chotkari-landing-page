@@ -1,0 +1,8 @@
+<svg width="162" height="111" viewBox="0 0 162 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="12" width="158" height="97" rx="6" fill="#F1F5F9"/>
+<rect x="1" y="1" width="160" height="109" rx="8" fill="white" stroke="#334155" stroke-width="2"/>
+<rect x="68" y="6" width="24" height="4" rx="2" fill="#334155"/>
+<circle cx="97" cy="8" r="2" fill="#334155"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.9991 44.7141V65.2855C62.9991 66.6495 63.5409 67.9576 64.5054 68.9221C65.4699 69.8865 66.778 70.4284 68.142 70.4284H93.8563C95.2202 70.4284 96.5283 69.8865 97.4928 68.9221C98.4573 67.9576 98.9991 66.6495 98.9991 65.2855V44.7141C98.9991 43.3501 98.4573 42.042 97.4928 41.0775C96.5283 40.1131 95.2202 39.5712 93.8563 39.5712H68.142C66.778 39.5712 65.4699 40.1131 64.5054 41.0775C63.5409 42.042 62.9991 43.3501 62.9991 44.7141Z" stroke="#9A1F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.1407 47.2856L80.9979 54.9999L93.855 47.2856" stroke="#9A1F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
