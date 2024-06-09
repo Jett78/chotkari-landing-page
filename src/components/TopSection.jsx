@@ -1,57 +1,25 @@
-"use client"
-import { FaArrowRight } from "react-icons/fa";
-import './styles/topContainer.css'
-import { Link } from 'react-scroll';
+import React from 'react'
+import HeroSection from "./HeroSection"
 
-export default function TopContainer() {
-    const handleTouchStart = () => {
-        console.log('Touch start event triggered');
-        // Add your logic here
-    };
+const TopSection = () => {
+  return (
+   <main>
+    <div className='mt-10 w-[267px] mx-auto border rounded-2xl flex justify-around py-2 px-3 text-white text-[14px]'>
+      <img src="./Logoicon.png" alt="logo" />
+      <h2 className='text-gray-300'>New Update <span className='text-gray-500'>Availabe</span></h2>
+      <a href="#" className='text-gray-500 underline'>View</a>
+    </div>
 
-    const handleTouchEnd = () => {
-        console.log('Touch end event triggered');
-        // Add your logic here
-    };
-    return (
-        <>
-            <div className="text-center mt-8 ck-main-info">
-
-                <h1 className="text-white ck-top-heading">
-                    Welcome to Chotkari
-                </h1>
-                <p className="mt-6 text-lg leading-8 text-white ck-top-paragraph">
-                    A powerful tool to enhance and amplify your reading experience.
-                </p>
-
-                <div className="button-container">
-
-                    <Link to="join-waitlist" smooth={true} duration={500} className="ck-join-button" style={{ cursor: 'pointer' }} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-                        Join Waitlist <FaArrowRight />
-                    </Link>
-
-                </div>
-
-
-                <div className="ck-info-video-section">
-                    <div className="ck-info-para ck-english">
-                        <p>Everything in Short</p>
-                    </div>
-
-                    <div className="ck-info-video">
-                        {/* <iframe src="https://player.vimeo.com/video/891811069?&autoplay=1&loop=1" width="560" height="315" frameBorder="0" allow="autoplay; picture-in-picture" ></iframe> */}
-
-                        {/* <iframe src="https://player.vimeo.com/video/892519221?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay;  picture-in-picture" title="Chotkari" loop></iframe> */}
-
-                        {/* <iframe src="https://player.vimeo.com/video/893201705?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" title="chotkari"></iframe> */}
-
-                        <iframe src="https://player.vimeo.com/video/893208241?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" title="chotkari"></iframe>
-                    </div>
-                    <div className="ck-info-para ck-nepali">
-                        <p>अब सबै समाचार छोटकरीमा</p>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+    <div className='text-center'>
+      <p className='text-[#7993B7] text-[32px] font-light py-2'>Thinking of News?</p>
+      <div className='flex justify-center items-center gap-2 -mt-4'>
+        <h2 className='font-semibold text-[72px] text-white '>Think </h2>
+        <img src="./Logo text.png" alt="logotext" className='h-12' />
+      </div>
+    </div>
+    <HeroSection/>
+   </main>
+  )
 }
+
+export default TopSection

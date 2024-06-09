@@ -1,113 +1,152 @@
 "use client"
-import { useState } from 'react';
+
 import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll'
 import logo from '../../public/chotkari-logo.svg';
-import mobileLogo from '../../public/mobile-menu-logo.svg';
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import youtube from '../../public/icons/youtube.png'
+import facebook from '../../public/icons/facebook.png'
+import linkedin from '../../public/icons/linkedin.png'
+import insta from '../../public/icons/instagram.png'
+import Link from 'next/link';
+import { SetStateAction, useState } from 'react';
 
-const navigation = [
-    { name: 'How to join?', href: 'how-to' },
-    { name: 'Giveaways', href: 'giveaway' },
-    { name: 'Join Waitlist', href: 'join-waitlist' },
-]
 export default function Navbar() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [activeLink, setActiveLink] = useState('home'); // Set the default active link
 
-
-
+    const handleLinkClick = (link: SetStateAction<string>) => {
+        setActiveLink(link);
+    };
     return (
-        <>
-            <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1">
-                    <a href="https://chotkari.com/" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Your Company</span>
+       <div className='w-[75%] mx-auto'>
+         <nav className="" style={{
+            position: 'sticky',
+            top: 0,
+            background: "#002137",
+            border: "0px, 0px, 1px, 0px",
+            height: '145px',
+            padding: "40px, 300px, 40px, 300px",
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            zIndex: '100'
+        }}>
+            <div style={{
+                background: '#002137',
+                border: "1px solid #B6E9FF",
+                borderRadius: '30px',
+                padding: '10px',
+                height: '65px',
+                display: 'flex',
+                justifyContent: 'center'
+            }}>
+                <div style={{
+                    width: '193px',
+                    borderRadius: '20px',
+                    padding: '0px, 20px, 0px, 20px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '10px'
+
+                }}>
+                    <a href="https://chotkari.com/">
+                       
+
+                        <div className='bg-[#006696] p-1 rounded-full'>
                         <Image
-                            className="h-8 w-auto"
+                            className="h-10 w-auto"
                             src={logo}
                             alt="chotkari-logo"
+                            height={45}
+                            width={193}
+
                         />
+                        </div>
                     </a>
                 </div>
-                <div className="flex lg:hidden">
-                    <button
-                        type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hamburger"
-                        onClick={() => setMobileMenuOpen(true)}
+                <ul style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <ScrollLink to={'download'} smooth={true} duration={500}
+                        onClick={() => handleLinkClick('home')}
                     >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                </div>
-                <div className="hidden lg:flex lg:gap-x-12">
-                    {navigation.map((item) => (
-                        <ScrollLink key={item.name} to={item.href} smooth={true} duration={500} className="text-sm font-semibold navlink leading-6 text-white">
-                            {item.name}
-                        </ScrollLink>
-                    ))}
-                </div>
+                        <li style={{
+                            width: '89px',
+                            padding: '14px 20px',
+                            borderRadius: '30px',
+                            gap: '20px',
+                            background: activeLink === 'home' ? '#0E3043' : 'transparent',
+                            fontSize: '16px',
+                            fontWeight: 400,
+                            color: '#ffffff',
+                            lineHeight: '16px',
+                            letterSpacing: '0.1px',
+                            textAlign: 'left',
+                            textDecoration: 'none',
+                            cursor: 'pointer'
+                        }}>Home
+                        </li>
+                    </ScrollLink>
+                    <ScrollLink to={'for-users'} smooth={true} duration={500}
+                        onClick={() => handleLinkClick('for-users')}>
+                        <li style={{
 
-            </nav>
-            <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 " />
-                <Dialog.Panel className="ck-nav-mobile fixed inset-y-0 right-0 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div className="flex items-center justify-between">
-                        <a href="https://chotkari.com" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <Image
-                                className="h-8 w-auto"
-                                src={mobileLogo}
-                                alt="chotkari-logo"
-                            />
-                        </a>
-                        <button
-                            type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-                    </div>
-                    <div className="mt-6 flow-root">
-                        <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
+                            padding: '14px 20px',
+                            borderRadius: '30px',
+                            gap: '20px',
+                            background: activeLink === 'for-users' ? '#0E3043' : 'transparent',
+                            fontSize: '16px',
+                            fontWeight: 400,
+                            color: '#ffffff',
+                            lineHeight: '16px',
+                            letterSpacing: '0.1px',
+                            textAlign: 'left',
+                            textDecoration: 'none',
+                            cursor: 'pointer' // To remove underline from links
+                        }}>For Users
+                        </li>
+                    </ScrollLink>
+                    <ScrollLink to={'for-authors'} smooth={true} duration={500}
+                        onClick={() => handleLinkClick('for-authors')}>
+                        <li style={{
+                            background: activeLink === 'for-authors' ? '#0E3043' : 'transparent',
+                            padding: '14px 20px',
+                            borderRadius: '30px',
+                            gap: '20px',
+                            fontSize: '16px',
+                            fontWeight: 400,
+                            color: '#ffffff',
+                            lineHeight: '16px',
+                            letterSpacing: '0.1px',
+                            textAlign: 'left',
+                            textDecoration: 'none',
+                            cursor: 'pointer'
+                        }}>For Authors
+                        </li>
+                    </ScrollLink>
+                </ul>
+            </div>
 
-                                <ScrollLink
-                                    smooth={true}
-                                    duration={500}
-                                    to="how-to"
-                                    className="-mx-3 block rounded-lg px-3  py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    How to join?
-                                </ScrollLink>
-                                <ScrollLink
-                                    smooth={true}
-                                    duration={500}
-                                    to="giveaway"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    Giveaways
-                                </ScrollLink>
-                                <ScrollLink
-                                    smooth={true}
-                                    duration={500}
-                                    to="join-waitlist"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold navlink leading-7 text-gray-900 hover:bg-gray-50"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    Join Waitlist
-                                </ScrollLink>
-                            </div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'space-around',
+                gap: '10px',
+                alignItems: 'center',
+                background: '#001C2F',
+                border: "1px solid #B6E9FF",
+                borderRadius: '30px',
+                padding: '10px',
+                height: '55px',
+                width: '240px'
+            }}>
+                <Link href={"https://youtube.com/@chotkari"} target='_blank'><Image src={youtube} alt='' priority /></Link>
+                <Link href={'https://www.facebook.com/chotkari.global'} target='_blank'><Image src={facebook} alt='' priority /></Link>
+                <Link href={'https://www.linkedin.com/in/chotkari/'} target='_blank'><Image src={linkedin} alt='' priority /></Link>
+                <Link href={'https://www.instagram.com/chotkari/'} target='_blank'><Image src={insta} alt='' priority /></Link>
 
-                        </div>
-                    </div>
-                </Dialog.Panel>
-            </Dialog>
-        </>
+            </div>
+
+        </nav>
+       </div>
+
     );
 }
 

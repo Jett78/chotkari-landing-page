@@ -7,11 +7,14 @@
   --primary-color: #006696;
   --accent-color: #EFF9FF;
 }
-
+*{
+  background-color:#002137;
+}
 
 html {
   overflow-x: hidden;
 }
+
 
 @media (max-width: 768px) {
   body {
@@ -27,7 +30,6 @@ dialog {
 }
 
 
-
 .navlink {
   cursor: pointer;
 }
@@ -36,20 +38,7 @@ dialog {
   color: #fff;
 }
 
-.ck-hero-section {
-  background-image: url('../../public/bg-stoke.svg');
-  background-color: var(--primary-color);
-  height: 70vh;
-  border-radius: 24px;
-  border: 1px solid var(--accent-color);
-  width: 100%;
-  margin: auto;
-}
 
-.ck-inner-hero-section {
-  width: 75%;
-  margin: auto;
-}
 
 
 
