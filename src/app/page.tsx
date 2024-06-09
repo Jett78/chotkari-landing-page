@@ -3,9 +3,8 @@ import MainContent from "@/components/MainContent";
 import TopContainer from "@/components/TopSection";
 import ChotkariNumbers from "@/components/ChotkariNumbers"
 import Author from "@/components/Author"
-import GiveawayDescription from "@/components/Giveaway";
-import JoinWaitlist from "@/components/JoinWaitlist";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"
+
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
       <MainContent />
       <ChotkariNumbers/>
      <Author/>
-
+<Footer/>
     </>
   );
 }
