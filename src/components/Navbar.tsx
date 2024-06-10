@@ -1,5 +1,6 @@
 "use client"
-
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap/gsap-core'
 import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll'
 import logo from '../../public/chotkari-logo.svg';
@@ -16,6 +17,20 @@ export default function Navbar() {
     const handleLinkClick = (link: SetStateAction<string>) => {
         setActiveLink(link);
     };
+    useGSAP(()=>{
+
+      gsap.from(".nav-animate",{
+        opacity:0,
+        y:-20,
+        stagger:0.3,
+      })
+      gsap.from(".icon-animate",{
+        opacity:0,
+        y:-20,
+        stagger:-0.3,
+      })
+
+    })
     return (
        <div className='w-[75%] mx-auto'>
          <nav className="" style={{
@@ -52,7 +67,7 @@ export default function Navbar() {
                     <a href="https://chotkari.com/">
                        
 
-                        <div className='bg-[#006696] p-1 rounded-full'>
+                        <div className='nav-animate bg-[#006696] p-1 rounded-full'>
                         <Image
                             className="h-10 w-auto"
                             src={logo}
@@ -82,7 +97,7 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer'
-                        }}>Home
+                        }} className='nav-animate'>Home
                         </li>
                     </ScrollLink>
                     <ScrollLink to={'for-users'} smooth={true} duration={500}
@@ -101,7 +116,7 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer' // To remove underline from links
-                        }}>For Users
+                        }} className='nav-animate'>For Users
                         </li>
                     </ScrollLink>
                     <ScrollLink to={'for-authors'} smooth={true} duration={500}
@@ -119,7 +134,7 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer'
-                        }}>For Authors
+                        }} className='nav-animate'>For Authors
                         </li>
                     </ScrollLink>
                 </ul>
@@ -137,10 +152,10 @@ export default function Navbar() {
                 height: '55px',
                 width: '240px'
             }}>
-                <Link href={"https://youtube.com/@chotkari"} target='_blank'><Image src={youtube} alt='' priority /></Link>
-                <Link href={'https://www.facebook.com/chotkari.global'} target='_blank'><Image src={facebook} alt='' priority /></Link>
-                <Link href={'https://www.linkedin.com/in/chotkari/'} target='_blank'><Image src={linkedin} alt='' priority /></Link>
-                <Link href={'https://www.instagram.com/chotkari/'} target='_blank'><Image src={insta} alt='' priority /></Link>
+                <Link href={"https://youtube.com/@chotkari"} target='_blank' className='icon-animate'><Image src={youtube} alt='' priority /></Link>
+                <Link href={'https://www.facebook.com/chotkari.global'} target='_blank' className='icon-animate'><Image src={facebook} alt='' priority /></Link>
+                <Link href={'https://www.linkedin.com/in/chotkari/'} target='_blank' className='icon-animate'><Image src={linkedin} alt='' priority /></Link>
+                <Link href={'https://www.instagram.com/chotkari/'} target='_blank' className='icon-animate'><Image src={insta} alt='' priority /></Link>
 
             </div>
 
