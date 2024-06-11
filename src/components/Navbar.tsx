@@ -37,11 +37,11 @@ export default function Navbar() {
      })
     })
     return (
-       <div className='w-[1200px] mx-auto'>
+       <div className=' max-w-[1200px] mx-auto z-50  flex flex-wrap items-center justify-between '>
          <nav className="" style={{
             position: 'sticky',
             top: 0,
-            background: "#002137",
+            background:"transparent",
             border: "0px, 0px, 1px, 0px",
             height: '145px',
             padding: "40px, 300px, 40px, 300px",
@@ -49,7 +49,7 @@ export default function Navbar() {
             justifyContent: 'space-between',
             alignItems: 'center',
             zIndex: '100'
-        }}>
+        }} >
             <div style={{
                 background: '#002137',
                 border: "1px solid #B6E9FF",
@@ -102,7 +102,7 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer'
-                        }} className='nav-animate'>Home
+                        }} className='nav-animate lg:block hidden'>Home
                         </li>
                     </ScrollLink>
                     <ScrollLink to={'for-users'} smooth={true} duration={500}
@@ -121,7 +121,7 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer' // To remove underline from links
-                        }} className='nav-animate'>For Users
+                        }} className='nav-animate lg:block hidden'>For Users
                         </li>
                     </ScrollLink>
                     <ScrollLink to={'for-authors'} smooth={true} duration={500}
@@ -139,13 +139,19 @@ export default function Navbar() {
                             textAlign: 'left',
                             textDecoration: 'none',
                             cursor: 'pointer'
-                        }} className='nav-animate'>For Authors
+                        }} className='nav-animate lg:block hidden'>For Authors
                         </li>
                     </ScrollLink>
                 </ul>
             </div>
 
-            <div style={{
+           
+
+            <img src="./spotlight.png" alt="" className='spotlight absolute xl:left-[22em] lg:left-[20em] md:left-[6em] w-[500px] h-[1012px]' />
+
+          
+        </nav>
+        <div style={{
                 display: 'flex',
                 justifyContent: 'space-around',
                 gap: '10px',
@@ -162,11 +168,6 @@ export default function Navbar() {
                 <Link href={'https://www.linkedin.com/in/chotkari/'} target='_blank' className='icon-animate'><Image src={linkedin} alt='' priority /></Link>
                 <Link href={'https://www.instagram.com/chotkari/'} target='_blank' className='icon-animate'><Image src={insta} alt='' priority /></Link>
             </div>
-
-            <img src="./spotlight.png" alt="" className='spotlight absolute left-[22em] w-[500px] h-[1012px]' />
-
-          
-        </nav>
        
        </div>
 

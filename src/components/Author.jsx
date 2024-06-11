@@ -49,10 +49,10 @@ const Author = () => {
    <div className='text-center'>
     <h2 className='author-text font-semibold text-[64px] text-white'>For Authors</h2>
     <p className='author-text text-gray-500 w-[800px] mx-auto'>We ae open for <span className='text-[#FFA500]'>Authors</span> to share our amazing platform with,let your platform shine with us and help you achieve your <span className='text-[#FFA500]'>success in Chotkari</span></p>
-    <div className='flex justify-center gap-16 mt-14'>
+    <div className='flex flex-wrap justify-center gap-16 mt-14'>
         {Steps.map((step,index) => (
             <div key={index} className='author-text'>
-                <div className=' flex justify-between text-[#7993B7]'>
+                <div className=' flex  justify-between text-[#7993B7]'>
                     <h2 className='font-semibold'>{step.step}</h2>
                     <p>{step.process}</p>
                 </div>
