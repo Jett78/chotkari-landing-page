@@ -31,7 +31,7 @@ const MainContent = () => {
     })
   })
   return (
-    <main className="grid justify-center -mt-[10em]">
+    <main className="grid justify-center -mt-[10em] ">
       <button className="animate-text w-[120px] h-30px mx-auto border rounded-2xl text-gray-500 text-[14px] z-50">
         Available on
       </button>
