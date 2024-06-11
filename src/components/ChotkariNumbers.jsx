@@ -21,6 +21,7 @@ export default function ChotkariNumbers() {
             return value;
         }
     };
+    
     return (
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
             <div style={{
@@ -31,7 +32,7 @@ export default function ChotkariNumbers() {
                 padding: '80px',
                 display: 'flex',
                 justifyContent: 'space-between'
-            }} className="bg-stoke">
+            }} className="number-animate bg-stoke">
 
                 <div style={{
                     flex: 1.2

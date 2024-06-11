@@ -1,4 +1,11 @@
+"use client"
 import React from 'react'
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap/gsap-core'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Steps = [{
     step:"Step 01",
@@ -21,14 +28,31 @@ const Steps = [{
 ]
 
 const Author = () => {
+    useGSAP(() =>{
+        const tr = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".author-text",
+            scroller: "body",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          }
+        })
+    
+        tr.from(".author-text",{
+          opacity:0,
+          y:20,
+          stagger:0.5,
+        })
+        
+      })
   return (
    <div className='text-center'>
-    <h2 className='font-semibold text-[64px] text-white'>For Authors</h2>
-    <p className='text-gray-500 w-[800px] mx-auto'>We ae open for <span className='text-[#FFA500]'>Authors</span> to share our amazing platform with,let your platform shine with us and help you achieve your <span className='text-[#FFA500]'>success in Chotkari</span></p>
+    <h2 className='author-text font-semibold text-[64px] text-white'>For Authors</h2>
+    <p className='author-text text-gray-500 w-[800px] mx-auto'>We ae open for <span className='text-[#FFA500]'>Authors</span> to share our amazing platform with,let your platform shine with us and help you achieve your <span className='text-[#FFA500]'>success in Chotkari</span></p>
     <div className='flex justify-center gap-16 mt-14'>
         {Steps.map((step,index) => (
-            <div key={index}>
-                <div className='flex justify-between text-[#7993B7]'>
+            <div key={index} className='author-text'>
+                <div className=' flex justify-between text-[#7993B7]'>
                     <h2 className='font-semibold'>{step.step}</h2>
                     <p>{step.process}</p>
                 </div>
