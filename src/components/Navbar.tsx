@@ -29,7 +29,12 @@ export default function Navbar() {
         y:-20,
         stagger:-0.3,
       })
-
+     gsap.from(".spotlight",{
+        opacity:0,
+        y:100,
+        duration:6, 
+       
+     })
     })
     return (
        <div className='w-[75%] mx-auto'>
@@ -156,10 +161,13 @@ export default function Navbar() {
                 <Link href={'https://www.facebook.com/chotkari.global'} target='_blank' className='icon-animate'><Image src={facebook} alt='' priority /></Link>
                 <Link href={'https://www.linkedin.com/in/chotkari/'} target='_blank' className='icon-animate'><Image src={linkedin} alt='' priority /></Link>
                 <Link href={'https://www.instagram.com/chotkari/'} target='_blank' className='icon-animate'><Image src={insta} alt='' priority /></Link>
-
             </div>
 
+            <img src="./spotlight.png" alt="" className='spotlight absolute left-80 w-[500px] h-[1012px]' />
+
+          
         </nav>
+       
        </div>
 
     );
