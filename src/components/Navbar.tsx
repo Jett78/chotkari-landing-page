@@ -37,7 +37,7 @@ export default function Navbar() {
      })
     })
     return (
-       <div className='w-[75%] mx-auto'>
+       <div className='w-[1200px] mx-auto'>
          <nav className="" style={{
             position: 'sticky',
             top: 0,
@@ -163,7 +163,7 @@ export default function Navbar() {
                 <Link href={'https://www.instagram.com/chotkari/'} target='_blank' className='icon-animate'><Image src={insta} alt='' priority /></Link>
             </div>
 
-            <img src="./spotlight.png" alt="" className='spotlight absolute left-80 w-[500px] h-[1012px]' />
+            <img src="./spotlight.png" alt="" className='spotlight absolute left-[22em] w-[500px] h-[1012px]' />
 
           
         </nav>

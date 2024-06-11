@@ -54,7 +54,9 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="animate-img relative flex items-center mx-auto mt-60 bg-[#001C2F] rounded-full h-[750px] w-[750px]">
+     <div className="border border-gray-700 mt-60 p-2 rounded-full w-[850px] h-[850px] flex items-center justify-center">
+     <div className="border border-gray-700 p-2 rounded-full w-[815px] h-[815px] flex items-center">
+     <div className="animate-img relative flex items-center mx-auto  bg-[#001C2F] rounded-full h-[770px] w-[770px]">
         <img src="./carousel-app-screens.png" alt="carouselimg" className="carousel" />
         <div className="absolute top-[2em] -left-[16em]">
             <div className="flex items-center gap-80">
@@ -70,6 +72,8 @@ const MainContent = () => {
             </div>
         </div>
       </div>
+     </div>
+     </div>
     </main>
   );
 };

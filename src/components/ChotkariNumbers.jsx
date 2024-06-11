@@ -27,7 +27,9 @@ export default function ChotkariNumbers() {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div
+     <div className=" bg-gray-500 rounded-xl backdrop-filter backdrop-blur-sm bg-opacity-20 w-[874px] h-[722px] mx-auto grid justify-center p-2 my-20 ">
+     <div className=" bg-gray-500 rounded-xl  bg-opacity-50 w-[1094px] h-[639px] mx-auto grid justify-center mt-8 ">
+     <div
         style={{
           borderRadius: "24px",
           backgroundColor: "#001C2F",
@@ -35,7 +37,7 @@ export default function ChotkariNumbers() {
           display: "flex",
           justifyContent: "space-between",
         }}
-        className="number-animate overflow-hidden bg-stoke w-[1320px] h-[601px] mx-auto my-20"
+        className="number-animate overflow-hidden bg-stoke w-[1320px] h-[601px] mx-auto my-4"
       >
         <div
           style={{
@@ -45,7 +47,7 @@ export default function ChotkariNumbers() {
           <div>
             <p
               style={{
-                color: "#14673C",
+                color: "#ffffff",
                 fontWeight: 600,
                 fontSize: "51px",
                 lineHeight: "78.3px",
@@ -249,11 +251,13 @@ export default function ChotkariNumbers() {
         </div>
 
        <div className="flex pl-24">
-          <img src="./screens/image 53.png" alt="" className="w-[235px] h-[500px] mt-20"/>
+          <img src="./screens/image 55.png" alt="" className="w-[235px] h-[500px] mt-20 "/>
           <img src="./screens/image 51.png" alt="" className="w-[282px] h-[600px]" />
           <img src="./screens/image 52 (1).png" alt="" className="w-[235px] h-[500px] mt-20"/>
        </div>
       </div>
+     </div>
+     </div>
     </ScrollTrigger>
   );
 }
