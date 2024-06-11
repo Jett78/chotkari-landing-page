@@ -24,6 +24,7 @@ const TopSection = () => {
     })
   })
   return (
+    
    <main className='relative '>
     <div className='z-10 text-animate mt-10 w-[267px] mx-auto border rounded-2xl flex justify-around py-2 px-3 text-white text-[14px]'>
       <img src="./Logoicon.png" alt="logo" />
@@ -38,9 +39,11 @@ const TopSection = () => {
         <img src="./Logo text.png" alt="logotext" className='h-12' />
       </div>
     </div>
+    <div className='z-10'>
     <HeroSection/>
+    </div>
 
-    <h2 className='bg-text font-semibold text-9xl tracking-wide  whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]  text-gray-600 opacity-10'>
+    <h2 className='bg-text font-semibold text-9xl tracking-wide  whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]  text-gray-600 opacity-10 z-0'>
       Everything in Short
     </h2>
    </main>

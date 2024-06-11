@@ -2,16 +2,16 @@ import React from "react";
 
 const MainContent = () => {
   return (
-    <main className="grid justify-center">
-      <button className="w-[120px] h-30px mx-auto border rounded-2xl text-gray-500 text-[14px]">
+    <main className="grid justify-center -mt-[10em]">
+      <button className="w-[120px] h-30px mx-auto border rounded-2xl text-gray-500 text-[14px] z-50">
         Available on
       </button>
-      <div className="flex justify-center gap-2 mt-4">
+      <div className="flex justify-center gap-2 mt-4 z-50">
         <img src="./image 28.png" alt="icon" />
         <img src="./image 30.png" alt="icon" />
       </div>
 
-      <div className="relative">
+      <div className="relative z-50">
         <img src="./Next Big Wave.png" alt="text" className="mt-10" />
         <div className="text-center absolute top-20 left-72 bg-transparent ">
           <img src="./Logo text.png" alt="logo" className="w-80 mx-auto" />
