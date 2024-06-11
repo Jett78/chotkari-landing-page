@@ -1,9 +1,13 @@
+"use client"
 import React from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { FiYoutube } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { PiCopyright } from "react-icons/pi";
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap/gsap-core'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const footerlinks =[
     {
@@ -23,10 +27,28 @@ const footerlinks =[
         title:"Instagram",
     },
 ]
-
+gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
+    useGSAP(() =>{
+        const tr = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".footer-animate",
+            scroller: "body",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          }
+        })
+    
+        tr.from(".footer-animate",{
+          opacity:0,
+          y:40,
+          duration:2,
+        })
+        
+      })
   return (
-    <div className='w-[1320px] h-[385px] px-20 py-10 mx-auto rounded-xl border border-gray-500 my-40 bg-[#0C2C41] text-white'>
+   <main>
+     <div className='footer-animate w-[1320px] h-[385px] px-20 py-10 mx-auto rounded-xl border border-gray-500 my-40 bg-[#0C2C41] text-white'>
           <div className='flex justify-between'>
           <div className='grid gap-4'>
             <img src="./chotkari-logo.svg" alt="logo" />
@@ -70,7 +92,9 @@ const Footer = () => {
           <p>Chotkari All Rights Reserved</p>
         </div>
      </div>
+   
     </div>
+   </main>
   )
 }
 

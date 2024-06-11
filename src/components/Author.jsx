@@ -56,7 +56,7 @@ const Author = () => {
                     <h2 className='font-semibold'>{step.step}</h2>
                     <p>{step.process}</p>
                 </div>
-                <div className=' mt-4 border w-[274px] h-[189px] rounded-xl flex flex-col items-center p-4'>
+                <div className=' mt-4 border border-gray-500 bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-10 w-[274px] h-[189px] rounded-xl flex flex-col items-center p-4'>
                     <h2 className='text-gray-400 pb-4'>{step.title}</h2>
                     <img src={step.img} alt="" />
                 </div>
