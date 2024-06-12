@@ -182,7 +182,7 @@ export default function Navbar() {
           <img
             src="./spotlight.png"
             alt="spotlight"
-            className="spotlight absolute lg:left-[60%] md:left-[120%] left-[25%]  w-[500px] h-[1012px]"
+            className="spotlight absolute lg:left-[62%] md:left-[120%] left-[25%]  w-[500px] h-[1012px]"
           />
       </nav>
 

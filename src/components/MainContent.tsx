@@ -60,17 +60,17 @@ const MainContent = () => {
      <div className="animate-img relative flex items-center mx-auto  bg-[#001C2F] rounded-full lg:h-[770px] md:h-[500px] h-[240px] lg:w-[770px] md:w-[500px] w-[240px] ">
         <img src="./carousel-app-screens.png" alt="carouselimg" className="carousel max-w-80" />
         
-        <div className="absolute lg:top-[2em] lg:right-[2em] md:top-[2em] md:right-[22em] bottom-[12em] right-[9.5em]">
+        <div className="absolute top-[2em] -left-[15em]">
             <div className="flex items-center lg:gap-80 md:gap-52 gap-24">
-            <img src="./benefit-03/benefit-03.png" alt="benefit"  className="lg:w-100 md:w-60 w-20"/>
-                <img src="./benefit-04/benefit-04.png" alt="benefit" className="lg:w-100 md:w-60 w-20" />
+            <img src="./benefit-03/benefit-03.png" alt="benefit"  className=""/>
+                <img src="./benefit-04/benefit-04.png" alt="benefit" className="" />
             </div>
         </div>
         
-        <div className="absolute lg:top-[35em] md:top-[25em] top-[12em] lg:-left-[2em] md:-left-[5em] -left-[2em] ">
+        <div className="absolute lg:top-[35em] md:top-[25em] top-[12em] lg:-left-[12em] md:-left-[5em] -left-[2em] ">
             <div className="flex items-center lg:gap-80 md:gap-44 gap-32">
-            <img src="./benefit-02/benefit-02.png" alt="benefit" className="lg:w-100 md:w-60 w-20"/>
-                <img src="./benefit-01/benefit-01.png" alt="benefit" className="lg:w-100 md:w-60 w-20" />
+            <img src="./benefit-02/benefit-02.png" alt="benefit" className=""/>
+                <img src="./benefit-01/benefit-01.png" alt="benefit" className="" />
             </div>
         </div>
       </div>

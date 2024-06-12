@@ -10,11 +10,10 @@ export default function Home() {
     <>
       <Navbar />
       <TopContainer />
-
       <MainContent />
-     {/* <ChotkariNumbers/> */}
+     <ChotkariNumbers/>
      <Author/>
-<Footer/>  
+    <Footer/>  
     </>
   );
 }
