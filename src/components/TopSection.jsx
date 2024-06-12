@@ -43,7 +43,7 @@ const TopSection = () => {
     <HeroSection/>
     </div>
 
-    <h2 className='bg-text font-semibold text-9xl tracking-wide  whitespace-nowrap lg:absolute hidden top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]   text-gray-600 opacity-10 z-0'>
+    <h2 className='bg-text font-semibold text-9xl tracking-wide  whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]   text-gray-600 opacity-10 z-0'>
       Everything in Short
     </h2>
    </main>
