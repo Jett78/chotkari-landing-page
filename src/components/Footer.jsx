@@ -48,11 +48,11 @@ const Footer = () => {
       })
   return (
    <main>
-     <div className='footer-animate w-[1320px] h-[385px] px-20 py-10 mx-auto rounded-xl border border-gray-500 my-40 bg-[#0C2C41] text-white'>
-          <div className='flex justify-between'>
+     <div className='footer-animate max-w-[1320px] min-h-[385px] md:px-20 px-4 py-10 mx-auto rounded-xl border border-gray-500 my-40 bg-[#0C2C41] text-white'>
+          <div className='flex flex-wrap gap-4 justify-between'>
           <div className='grid gap-4'>
             <img src="./chotkari-logo.svg" alt="logo" />
-            <p className='w-[360px] text-gray-400'>Indulge yourself into a world of greatness where you'll be a part of a community that values information, connection, and the joy of reading. </p>
+            <p className='max-w-[360px] text-gray-400'>Indulge yourself into a world of greatness where you'll be a part of a community that values information, connection, and the joy of reading. </p>
         </div>
         <div className='grid gap-4'>
             <h2>Navigation</h2>
@@ -78,10 +78,10 @@ const Footer = () => {
         </div>
      </div>
 
-     <div className='flex justify-between mt-16 pt-2 border-t'>
+     <div className='flex flex-wrap gap-2 justify-between items-center md:mt-16 mt-4 pt-2 border-t'>
         <div>
             <p className='text-gray-500 py-2'>Available on</p>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 bg-red-200 w-20'>
                 <img src="./image 28.png" alt="logo" />
                 <img src="./image 30.png" alt="logo" />
             </div>

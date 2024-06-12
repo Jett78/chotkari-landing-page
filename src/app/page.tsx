@@ -1,26 +1,20 @@
-import Navbar from "@/components/Navbar";;
+import Navbar from "@/components/Navbar";
 import MainContent from "@/components/MainContent";
 import TopContainer from "@/components/TopSection";
-import ChotkariNumbers from "@/components/ChotkariNumbers"
-import Author from "@/components/Author"
-import Footer from "@/components/Footer"
-
+import ChotkariNumbers from "@/components/ChotkariNumbers";
+import Author from "@/components/Author";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <header className="ck-header">
-        <section className="ck-hero-section">
-          <div className="ck-inner-hero-section">
-            <Navbar />
-            <TopContainer />
-          </div>
-        </section>
-      </header>
+      <Navbar />
+      <TopContainer />
+
       <MainContent />
-      <ChotkariNumbers/>
+     {/* <ChotkariNumbers/> */}
      <Author/>
-<Footer/>
+<Footer/>  
     </>
   );
 }

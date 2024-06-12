@@ -47,8 +47,8 @@ const Author = () => {
       })
   return (
    <div className='text-center'>
-    <h2 className='author-text font-semibold text-[64px] text-white'>For Authors</h2>
-    <p className='author-text text-gray-500 w-[800px] mx-auto'>We ae open for <span className='text-[#FFA500]'>Authors</span> to share our amazing platform with,let your platform shine with us and help you achieve your <span className='text-[#FFA500]'>success in Chotkari</span></p>
+    <h2 className='author-text font-semibold md:text-[64px] text-[32px] text-white'>For Authors</h2>
+    <p className='author-text text-gray-500 max-w-[800px] mx-auto'>We ae open for <span className='text-[#FFA500]'>Authors</span> to share our amazing platform with,let your platform shine with us and help you achieve your <span className='text-[#FFA500]'>success in Chotkari</span></p>
     <div className='flex flex-wrap justify-center gap-16 mt-14'>
         {Steps.map((step,index) => (
             <div key={index} className='author-text'>

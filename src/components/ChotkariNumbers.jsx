@@ -27,8 +27,8 @@ export default function ChotkariNumbers() {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-     <div className=" bg-gray-500 rounded-xl backdrop-filter backdrop-blur-sm bg-opacity-20 w-[874px] h-[722px] mx-auto grid justify-center p-2 my-20 ">
-     <div className=" bg-gray-500 rounded-xl  bg-opacity-50 w-[1094px] h-[639px] mx-auto grid justify-center mt-8 ">
+     <div className=" bg-gray-500 rounded-xl backdrop-filter backdrop-blur-sm bg-opacity-20 max-w-[874px] h-[722px] mx-auto grid justify-center p-2 my-20 ">
+     <div className=" bg-gray-500 rounded-xl  bg-opacity-50 max-w-[1094px] h-[639px] mx-auto grid justify-center mt-8 ">
      <div
         style={{
           borderRadius: "24px",
@@ -37,7 +37,7 @@ export default function ChotkariNumbers() {
           display: "flex",
           justifyContent: "space-between",
         }}
-        className="number-animate overflow-hidden bg-stoke w-[1320px] h-[601px] mx-auto my-4"
+        className="number-animate overflow-hidden bg-stoke lg:w-[1320px] w-[1100px] h-[601px] mx-auto my-4"
       >
         <div
           style={{
@@ -49,10 +49,9 @@ export default function ChotkariNumbers() {
               style={{
                 color: "#ffffff",
                 fontWeight: 600,
-                fontSize: "51px",
                 lineHeight: "78.3px",
               }}
-              className="whitespace-nowrap"
+              className="whitespace-nowrap lg:text-[51px]"
             >
               Chotkari{" "}
               <span
@@ -250,7 +249,7 @@ export default function ChotkariNumbers() {
           </div>
         </div>
 
-       <div className="flex pl-24">
+       <div className="lg:flex hidden pl-24">
           <img src="./screens/image 55.png" alt="" className="w-[235px] h-[500px] mt-20 "/>
           <img src="./screens/image 51.png" alt="" className="w-[282px] h-[600px]" />
           <img src="./screens/image 52 (1).png" alt="" className="w-[235px] h-[500px] mt-20"/>
